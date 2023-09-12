@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+.game {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.game .name {
+    font-size: 30px;
+    padding: 20px;
+    background-color: #01497c;
+    color: white;
+    margin: auto;
+    font-weight: 700;
+}
+
+.container {
+    width: 85%;
+    margin: 10px auto;
+
+}
+.select select{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #ff4d6d;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid #ff758f;
+    margin-bottom: 10px;
+}
+.container .msg {
+    background-color: #ff758f;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border-radius: 8px;
+
+}
+.container .msg >span::before {
+    content: "[ ";
+}
+
+.container .msg >span::after {
+    content: " ]";
+}
+
+.container .msg span {
+    font-weight: bold;
+    color: #00416A;
+}
+
+.start {
+    width: 100%;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #ff8fa3;
+    transition: 0.5s ease-in-out;
+    border: none;
+}
+
+.start:hover{
+    background-color: #00416A;
+    
+}
+.the-word {
+    background-color: #ffb3c1;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.input-field input {
+    border: 2px solid #00416A;
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: center;
+    caret-color: #ffccd5;
+    border-radius: 8px;
+    font-size: 35px;
+    color: #00416A;
+}
+
+.upComing-Words {
+    width: 100%;
+    background-color: #1C39BB;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.upComing-Words >div {
+    background-color: white;
+    margin: 10px 5px;
+    color: #1C39BB;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00416A;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.control .timeleft >span::before {
+    content: "[ ";
+    color: #ff4d6d;
+}
+
+.control .timeleft >span::after {
+    content: " ]";
+    color: #ff4d6d;
+}
+
+.control .score >span::before {
+    content:"[ " ;
+    color: #ff4d6d;
+}
+
+.control .score >span::after {
+    content: " ]";
+    color: #ff4d6d;
+}
+
+.control span {
+    font-weight: bold;
+}
+
+.finish{
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+@media (max-width:768px){
+    .game .name {
+        font-size: 18px;
+        padding: 20px;
+    }
+    .container{
+        width: 90%;
+    }
+    .container .msg {
+        padding: 20px;
+        font-size: 16px;
+    }
+    .input-field input {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .control{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .the-word {
+        /* padding: 10px; */
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+.statistics {
+    width: 100%;
+    background-color: #00416A;
+    height: auto;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.try {
+    width: 200px;
+    border-radius: 8px;
+    background-color: #00416A;
+    padding: 20px;
+    margin: auto;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    display: none;
+}
